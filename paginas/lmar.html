@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lenguaje de marcas</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <style>
+    body {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    .sidenav {
+      height: 100%;
+      position: relative;
+      margin-top: 20px;
+    }
+    .contenido {
+      margin-left: 700px;
+    }
+    a {
+      text-decoration: none;
+      color: #058af0;
+    }
+  </style>
+</head>
+<body>
+<nav id="sidenav" class="fixed-top">
+<div class="row">
+  <div class="col-4">
+    <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#item-1">RA1. Introducción a los lenguajes de marcas</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-1-1">Introducción</a>
+          <a class="nav-link ms-3 my-1" href="#item-1-2">XML</a>
+        </nav>
+        <a class="nav-link" href="#item-2">RA2. HTML y CSS</a>
+        <nav class="nav nav-pills flex-column">
+          <a class="nav-link ms-3 my-1" href="#item-2-1">HTML</a>
+          <a class="nav-link ms-3 my-1" href="#item-2-2">CSS</a>
+        </nav>
+      </nav>
+    </nav>
+  </div>
+</nav>
+<nav class="contenido" >
+  <div class="col-8">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+      <div id="item-1">
+        <h2>RA1. Introducción a los lenguajes de marcas</h2>
+        <p><hr></p>
+      </div>
+      <div id="item-1-1">
+        <h3>Introducción</h3><hr>
+        <p>Un lenguaje de marcado o lenguaje de marcas es
+una forma de codificar un documento que, junto con el
+texto, incorpora etiquetas o marcas que contienen
+información adicional acerca de la estructura del texto
+o su presentación.</p>
+
+      <h5>Características</h5>
+        <ul type="none">
+          <li><h6><i class="fa-solid fa-file-lines"></i> Separan el contenido de la presentación</h6>
+            <blockquote>El mismo contenido puede tener distinta apariencia según el entorno en el que se muestre</blockquote>
+          </li>
+          <li><h6><i class="fa-solid fa-code"></i> Usan texto plano</h6>
+            <blockquote>Siendo las codificaciones más usadas <b>ASCII</b>, <b>ISO 8859</b> y <b>Unicode o UTF-8</b></blockquote>
+          </li>
+          <li><h6><i class="fa-solid fa-gears"></i> Facilitan la interoperatividad</h6>
+            <blockquote>Los documentos son independientes de la plataforma, el S.O. o el programa.</blockquote>
+          </li>
+          <li><h6><i class="fa-solid fa-tags"></i> Usan marcas</h6>
+            <blockquote>Usan etiquetas que organizan el contenido y definen la presentación
+              <blockquote><b><code>< nombre_etiqueta > Elemento < /nombre_etiqueta ></code></b></blockquote></blockquote>
+          </li>
+        </ul>
+
+      <h5>Ventajas</h5>
+      <ul type="none">
+        <li><i class="fa-solid fa-gears"></i> Son independientes de la plataforma, el Sistema
+        Operativo o del programa. Esto permite el intercambio
+        de información entre sistemas informáticos
+        completamente distintos.</li>
+        <li><i class="fa-solid fa-code"></i> Usan texto plano. Esto hace que sea muy fácil crear
+        documentos de este tipo. Solo se necesita un editor de
+        texto simple.</li>
+      </ul>
+
+      <h5>Lenguajes más relevantes</h5>
+      <ul type="none">
+        <li><h6>SGML</h6>
+          <blockquote>(<i>Standar Generalized Markup Language</i>). En realidad es un metalenguaje, es decir, se
+          usa para crear otros lenguajes de marcas. Por ejemplo, la gramática del HTML se creó a
+          partir de él. Es muy potente pero también compleja de utilizar. Motivo por el cual se creó el
+          XML.</blockquote>
+        </li>
+        <li><h6>XML</h6>
+          <blockquote>Es un subconjunto de SGML. Por tanto, es también un metalenguaje pero mucho más fácil de usar. Su aplicación va más allá de Internet, siendo un estándar para el intercambio de información estructurada entre diferentes plataformas.</blockquote>
+        </li>
+        <li><h6>HTML</h6>
+          <blockquote>(<i>HyperText Markup Language</i>). Es el lenguaje de marcas más conocido ya que se usa para convertir documentos de texto en páginas web. Para solventar sus carencias se creó XHTML.</blockquote>
+        </li>
+        <li><h6>XHTML</h6>
+          <blockquote>Es una reformulación de HTML en XML. En otras palabras, emplea el mismo
+          vocabulario de HTML pero con reglas sintácticas tomadas del XML, mucho más estrictas.</blockquote>
+        </li>
+      </ul>
+
+      <h5>Clasificación según su ámbito</h5>
+      <ul type="none">
+        <li><h6><i class="fa-solid fa-earth-americas"></i> Desarrollo web</h6>
+        <blockquote>El uso más extendido de documentos electrónicos es en forma de
+páginas web, generadas de forma estática o dinámica, confeccionados mediante uno
+de los lenguajes de marcas más populares: HTML</blockquote></li>
+        <li><h6><i class="fa-solid fa-flask"></i> Ámbito científico</h6>
+        <blockquote>En entornos científicos es muy común el uso de fórmulas
+matemáticas complejas. Para poder representar este tipo de información se creó el
+lenguaje MathML, basado en XML. Con él se pueden representar expresiones
+matemáticas como ecuaciones, límites, fórmulas físicas, etc.</blockquote></li>
+        <li><h6><i class="fa-solid fa-image"></i> Gráficos vectoriales</h6>
+        <blockquote> Los formatos de imagen más habituales son jpg, png y gif.
+Todos ellos son mapas de bits que tienen el inconveniente de que cuando su tamaño
+crece pierden definición. Sin embargo, no ocurre lo mismo con los gráficos
+vectoriales escalables realizados con el lenguaje SVG que permite generar imágenes
+bidimensionales independientes de la resolución, lo que permite aumentar su tamaño
+sin perder definición.</blockquote></li>
+        <li><h6><i class="fa-solid fa-file-invoice"></i> Metainformación</h6>
+        <blockquote>Un metacontenido no es más que la información relativa al
+contenido del documento, como su título, autor, tamaño del archivo, fecha de
+creación, historial de cambios, palabras clave, y demás información asociada. Se
+puede utilizar un metacontenido, por ejemplo, para realizar búsquedas, filtrar
+información, configuración de servicios y aplicaciones, etc. Ademas tenemos la
+posibilidad de definir estos metacontenidos fuera del documento para emplearlos en
+múltiples documentos.</blockquote></li>
+        <li><h6><i class="fa-solid fa-database"></i> Bases de datos</h6>
+        <blockquote>Al estar la información altamente estructurada se puede crear una
+base de datos mediante un LM, la cual permitiría un acceso a la información
+extremadamente rápido. De hecho, algunos sistemas gestores de bases de datos
+relacionales incorporan funciones para transformar la información que almacenan a
+un formato de LM y también hay productos de bases de datos específicos que
+emplean LM en exclusiva.</blockquote></li>
+        <li><h6><i class="fa-solid fa-right-left"></i> Intercambio de información</h6>
+        <blockquote> Compartir grandes volúmenes de información entre
+plataformas de software y sistemas operativos diferentes de forma sencilla, segura y,
+sobre todo, fiable.</blockquote></li>
+        <li><h6><i class="fa-solid fa-envelope"></i> Mensajería</h6>
+        <blockquote>Respecto al intercambio de mensajes se busca la flexibilidad y sencillez
+que ofrece un LM para intercambiar documentos electrónicos a través de mensajes
+de correo electrónico. Tradicionalmente se ha empleado un formato de documento
+electrónico complejo y difícil de leer. El uso de un LM no solo facilita la legibilidad del
+documento, y por ende el desarrollo de aplicaciones para su interpretación, sino
+también la estructura de sus elementos tiene sentido en si mismo. </blockquote></li>
+      </ul>
+      </div><br>
+      <div id="item-1-2"><hr>
+        <h3>XML</h3><hr>
+        <h5>¿Qué es?</h5>
+        <p>Es un lenguaje desarrollado por W3C (World Wide Web Consortium)
+        que está basado en SGML </p>
+        <p><b>Es un metalenguaje</b>, es decir, puede ser empleado para definir otros lenguajes, llamados <b>dialectos XML</b>.</p>
+        <ul type="none">
+          <li><b>GML</b> (<i>Geography Markup Languaje</i>, Lenguaje de Marcado Geográfico).</li>
+          <li><b>MathML</b> (<i>Mathematical Markup Language</i>, Lenguaje de Marcado Matemático).</li>
+          <li><b>RSS</b> (<i>Really Simple Syndication</i>, Sindicación Realmente Simple).</li>
+          <li><b>SVG</b> (<i>Scalable Vector Graphics</i>, Gráficos Vectoriales Escalables).</li>
+          <li><b>XHTML</b> (<i>eXtensible HyperText Markup Language</i>, Lenguaje de Marcado de Hipertexto eXtensible).</li>
+        </ul>
+        <h5>Características XML</h5>
+        <ul type="none">
+          <li><h6>Versatilidad</h6>
+            <blockquote>Se utiliza en muchos campos de la informática (WEB, Bases de Datos, Editores de texto, Hojas de cálculo...)
+            </blockquote>
+          </li>
+          <li><h6>Estándar</h6>
+            <blockquote>Constituye un estándar por lo que permite el intercambio en cualquier plataforma o S.O. </blockquote>
+          </li>
+          <li><h6>Metalenguaje</h6>
+            <blockquote>Permite definir otros lenguajes de marcas a partir de él.</blockquote>
+          </li>
+          <li><h6>Volumen de datos</h6>
+            <blockquote>Permite trabajar con grandes volúmenes de datos.</blockquote>
+          </li>
+        </ul>
+
+        <h5>Herramientas XML</h5>
+        <ul type="none">
+          <li><h6>Editor de texto genérico</h6>
+            <blockquote>Para crear documentos XML podemos usar cualquier editor de texto plano.
+            </blockquote>
+          </li>
+          <li><h6>Editor específico</h6>
+            <blockquote>Podemos usar un editor específico. En este caso sería deseable que contara con herramientas para:
+              <ul type="square">
+                <li>Ayudar en la gestión de etiquetas</li>
+                <li>Control de sintaxis</li>
+                <li>Uso de colores para mayor legibilidad</li>
+                <li>Validación del documento</li>
+              </ul>
+            </blockquote>
+          </li>
+        </ul>
+        <h5>Documentos XML bien formados</h5>
+        <p>Para que un documento XML esté bien formado se han de seguir una serie de normas básicas a nivel de sintaxis.</p>
+        <h6><i class="fa-solid fa-square-check"></i> Incluir una declaración XML</h6>
+        <blockquote>
+          <ul type="none">
+            <li><b><font color="#0591f/c">Versión XML</font></b> (obligatoria)</li>
+            <li><b><font color="#05fc26">Codificación de caracteres utilizada</font></b> (obligatoria)</li>
+            <li><b><font color="#fc9505">Declaración de independencia</font></b> (opcional)</li>
+            <br>        
+            <li><b><code>< <font color="#0591fc">?xml version="1.0"</font> <font color="#05fc26">encoding="URF-8"</font> <font color="#fc9505">standalone="yes"?</font> ></code></b></li>
+          </ul>
+        </blockquote>
+        <h6><i class="fa-solid fa-square-check"></i> Tener un único elemento raíz (padre)</h6>
+        <h6>Estructura en árbol invertido</h6>
+        <blockquote>La estructura de cualquier documento XML se puede representar coo un árbol invertido de sus elementos</blockquote>
+        <h6><i class="fa-solid fa-square-check"></i> Declaración de entidades</h6>
+        <blockquote>Todas las entidades usadas se declararán en una DTD interna</blockquote>
+        <h6><i class="fa-solid fa-square-check"></i> Sintaxis correcta</h6>
+        <blockquote>
+          <ul type="disk">
+            <li>Todos los elementos deben estar delimitados por una <b>etiqueta inicial y otra final</b> con el mismo nombre. <br><code>< elemento > Valor < /elemento ></code></li>
+            <li>Los valores de <b>atributos</b> en XML deben ir entre <b>comillas simples o dobles</b> <br><code>< producto <strong>codigo="G45"</strong> ></code></li>
+            <li>Los <b>elementos vacíos</b> deben terminar con '/' (autocierre) o añadiendo una eqiqueta de fin y no puede haber etiquetas aisladas<br><code>< nombre > < /nombre ></code> |  <code>< nombre/ ></code></li>
+            <li>Los nombres de los atributos:
+              <ul type="none">
+                <li>Sigue las mismas normas que los nombres de los elementos</li>
+                <li>Deben ser únicos en todo el documento</li>
+              </ul>
+            </li>
+            <li>
+              Los comentarios deben escribirse entre los caracteres <b>"<!-" y "->"</b>
+            </li>
+          </ul>
+        </blockquote>
+        <h5>Instrucciones de porocesamiento en XML</h5>
+        <p>Una instrucción de procesamiento (processing instruction) sirve para
+        indicar cierta información al programa que procese dicho documento.
+        Las instrucciones de proceso se escriben empezando con la pareja de caracteres “<?” y finalizando con “?>”.<br>
+        Sirven, por ejemplo, para asociar una hoja de estilo al documento XMD.
+        <code>< ?xml-stylesheet type="text/css" href="estilo-propio.css"? ></code>
+        </p>
+        <h5>Espacio de nombres en XML</h5>
+        <p><b>Resuelven las ambigüedades</b> que surgen por el uso de elementos distintos con el mismo nombre</p>
+        <p>Se utiliza la etiqueta <b>xmlns</b> para definir ámbitos o espacios de nombres.</p>
+        <p>Se puede declarar el espacio de nombres directamente en las etiqueta que crean el conflicto o en la etiqueta raíz
+          <blockquote><code>xmlns:<i>nombre</i>=”URI”</code></blockquote>
+        </p>
+        <h5>Validación de documentos XML</h5>
+        <p>Es la comprobación de que:
+          <ul>
+            <li>El documento es un documento bien formado</li>
+            <li>Sigue las reglas dictadas por su DTD</li>
+          </ul>
+        </p>
+        <p>El proceso de validación por tanto verificará:
+          <ul>
+            <li>La corrección de los datos</li>
+            <li>Integridad de los datos</li>
+            <li>Entendimiento de la semántica</li>
+          </ul>
+        </p>
+        <p>Con esto, los métodos de validación más conocidos son los siguientes:
+          <blockquote><b>Uso de DTD</b>
+            <ul>
+              <li>Es el más antiguo</li>
+              <li>Presenta limitaciones</li>
+            </ul>
+          </blockquote>
+          <blockquote><b>Uso de XML Schema (XSD)</b>
+            <ul>
+              <li>Descrita por el W3C</li>
+              <li>Consume gran cantidad de recursos y tiempo</li>
+          </ul>
+          </blockquote>
+          <blockquote><b>Uso de Schematron</b>
+            <ul>
+             <li>Gran flexibilidad en la descripción de estructuras relacionales</li>
+              <li>Se puede combinar con otros lenguajes como Schema</li>
+           </ul>
+          </blockquote>
+        </p>
+        <h5>Uso de DTD para XML</h5>
+        <p>El DTD describe los siguientes apartados:</p>
+        <ul type="none">
+          <li><b>Elementos</b> <blockquote>Indican que etiquetas son permitidas y el contenido de dichas etiquetas</blockquote></li>
+          <li><b>Estructura</b> <blockquote>Indica el orden en que van las etiquetas en el documento.</blockquote></li>
+          <li><b>Anidamiento</b> <blockquote>Indica qué etiquetas van dentro de otras.</blockquote></li>
+        </ul>
+        <p>Con todo, el uso de DTD sigue presentando ciertas limitaciones:</p>
+          <p><i class="fa-solid fa-square-xmark"></i> No permite definir elementos locales que sólo sean válidos dentro de otros elementos.</p>
+          <p><i class="fa-solid fa-square-xmark"></i> La jerarquía se debe introducir usando los espacios de nombres en el documento XML lo que añade complejidad a este.</p>
+          <p><i class="fa-solid fa-square-xmark"></i> Además no es posible indicar a qué tipo de dato (número, fecha, moneda) ha de corresponder un atributo o el texto de un elemento</p>
+          <br>
+          <p>El DTD se puede declarar tanto interna como externamente</p>
+          <h6>Declaración interna</h6>
+          <code>
+            < ?xml version="1.0"? ><br>
+            < !DOCTYPE mensaje [
+            < !ELEMENT mensaje (para,de,asunto,cuerpo) ><br>
+            < !ELEMENT para (#PCDATA) ><br>
+            < !ELEMENT de (#PCDATA) ><br>
+            < !ELEMENT asunto (#PCDATA) ><br>
+            < !ELEMENT cuerpo (#PCDATA) ><br>
+            ] ><br>
+            <  mensaje ><br>
+            < para >María< /para ><br>
+            < de >Pedro< /de ><br>
+            < asunto >Recordatorio cita< /asunto ><br>
+            < cuerpo >No te olvides que paso a recogerte< /cuerpo ><br>
+            < /mensaje >
+            </code><br><br>
+          <h6>Declaración externa</h6>
+          <p>Fichero XML:</p>
+          <code>
+          < ?xml version="1.0"? ><br>
+          < !DOCTYPE mensaje SYSTEM "msje.dtd" ><br>
+          < mensaje ><br>
+          < para >María< /para ><br>
+          < de >Pedro< /de ><br>
+          < asunto >Recordatorio cita< /asunto ><br>
+          < cuerpo >No te olvides que paso a recogerte< /cuerpo ><br>
+          < /mensaje > 
+          </code>
+          <br><br>
+          <h6>Componentes</h6>
+          <p>Desde el punto de vista del DTD, todos los documentos XML
+          se construyen con los siguientes componentes:</p>
+          <ul>
+            <li>Elementos (ELEMENT)</li>
+            <li>Atributos (ATTRIBUTE)</li>
+            <li>Entidades (ENTITIES</li>
+            <li>PCDATA</li>
+            <li>CDATA</li>
+          </ul>
+
+          <h6><u>Elementos</u></h6>
+          <p>Elementos <b>vacíos</b></p>
+          <p><code>< !ELEMENT nombre_elemento EMPTY ></code></p><br>
+          <p>Elementos con <b>cualquier contenido</b></p>
+          <p><code>< !ELEMENT nombre_elemento ANY ></code></p><br>
+          <p>Elementos <b>con texto</b></p>
+          <p><code>< !ELEMENT nombre_elemento (#PCDATA) ></code></p><br>
+          <p>Elementos <b>con otros elementos</b></p>
+          <p><code>< !ELEMENT nombre_elemento (elmto1,elmento2,elmto3...) ></code></p>
+
+          <p><i class="fa-solid fa-right-long"></i> Los elementos que aparecen <b>una o más veces</b> llevarán el signo <b>+</b> al lado del nombre del elemento</p>
+          <p><i class="fa-solid fa-right-long"></i> Los elementos que aparecen <b>cero o más veces</b> llevarán el signo <b>*</b> al lado del nombre del elemento</p>
+          <p><i class="fa-solid fa-right-long"></i> Los elementos aparecen <b>cero o una vez</b> llevarán el signo <b>?</b> al lado del nombre del elemento</p>
+          <p><i class="fa-solid fa-right-long"></i> Los elementos que aparecen <b>En alternancia con otro</b> llevarán el signo <b>|</b> entre los nombtes de los elementos</p>
+          <p><i class="fa-solid fa-right-long"></i> Los elementos que tienen <b>contenido mixto</b> llevarán <b>#PCDATA</b> al principio de la lista y el signo <b>|</b> entre los nombres de los elementos</p>
+
+          <h6><u>Atributos</u></h6>
+          <p><code>< !ATTLIST nombre-elemento nombre-atributo tipo valor ></code></p>
+
+          <h6><u>Entidades</u></h6>
+          <p><code>< !ENTITY entity-name "entity-value" ></code></p>
+          <p>Ejemplo:</p>
+          <code>< !ENTITY responsable "Martina Wic" ><br>
+          < !ENTITY firma "ManForts. S.A" ><br>
+          .<br>
+          .<br>
+          .<br>
+          < autoria > &responsable ; &firma ;< /autoria ></code><br><br>
+
+          <h5>Uso de Schema para XML</h5>
+          <p>XML Schema es un lenguaje de esquema escrito en XML, basado en la gramática y pensado para proporcionar una mayor potencia expresiva que las DTD</p>
+          <p>El principal aporte de XML Schema es el gran número de
+          tipos de datos que incorpora, como fechas, números y strings,
+          como también tipos personalizados simples y complejos.</p>
+      </div><br><br>
+      <div id="item-2">
+        <h2>RA2. HTML y CSS</h2><hr>
+        <div id="item-2-1"><h4>HTML</h4>
+        <p>HTML (<i>HyperText Markup Language</i>, Lenguaje de Marcado de HiperTexto) es un lenguaje utilizado para la creación de páginas web.</p>
+        <h5>Sintaxis HTML</h5>
+        <p>Un documento HTML contiene marcas (etiquetas), las cuales se escriben empleando los caracteres <b><</b> y <b>></b>, además de <b>/</b>.</p>
+        <p>Por ejemplo, las etiquetas de inicio (<code>< html ></code>) y fin (<code>< /html ></code>) representan al elemento raíz que hay que escribir en todo documento HTML.</p>
+
+        <p>Un documento web se forma mediante elementos, los cuales pueden tener atributos.
+        Los elementos se utilizan tanto para formar la estructura del documento como para mostrar
+        su contenido. Vamos a ver en detalle estos componentes.</p>
+
+        <h6>Elementos</h6>
+
+        <p>Un elemento representa a cualquier parte de una página web. Un párrafo, una tabla, un
+elemento de lista, incluso la página de web entera se representan mediante elementos.
+Existen varios tipos de elementos que son:</p>
+        <ul>
+          <li>Elementos vacíos, como <code>br</code> e <code>img</code></li>
+          <li>Elementos <code>< template ></code></li>
+          <li>Elementos de tezto sin procesar, como <code>script</code> y <code>style</code>.</li>
+          <li>Elementos de texto escapado, como <code>textarea</code> <code>title.</code></li>
+          <li>Elementos externos que proceden del espacio de nombres MathGL o SVG.</li>
+          <li>Elementos normales, como <code>p</code> o <code>table.</code></li>
+        </ul>
+        <p>El siguiente ejemplo ilustra el uso de las etiquetas de apertura y cierre en un elemento
+normal, en este caso un párrafo de texto.</p>
+        <code>< p >El rápido zorro pardo salta encima del perro vago< /p></code><br><br>
+        <p>Algunos elementos, sin embargo, no tienen contenido. Estos son conocidos como
+elementos vacíos. En HTML, la sintaxis anterior no puede usarse para elementos vacíos.
+Tales elementos no tienen etiqueta de cierre. El siguiente ejemplo incluye un salto de línea
+en el documento web</p>
+        <code>< br ></code><br><br><br>
+        <h6>Atributos</h6>
+        <p>Los atributos se emplean para definir propiedades de los elementos. Los atributos de
+un elemento se ponen dentro de la etiqueta de inicio después del nombre del elemento y
+antes de la barra de dividir. Si hay varios se separan por un espacio.
+Los atributos modifican el comportamiento básico de los elementos al presentar el
+contenido. Algunos son globales y se pueden utilizar en cualquier elemento, otros son solo
+específicos de un elemento.<br>
+Todos los atributos tienen un nombre y pueden tener un valor, separados por el signo
+=, como en el siguiente ejemplo.
+<code>< img src=”logotipo.jpg” ></code><br><br><br>
+        <h6>Comentarios</h6>
+        <p>Podemos incluir texto dentro de un documento web que no se verá en la pantalla del
+navegador. Este texto suelen ser notas aclaratorias para el propio desarrollador de la página
+web. Cualquier texto encerrado entre < !-- y --> será ignorado por el navegador y no se
+presentará en pantalla. Por ejemplo</p>
+        <code>< !-- Esto es un comentario y no se verá en el navegador -- ></code><br><br><br>
+
+        <h5>Estructura de un documento HTML</h5>
+        <p>Los documentos HTML están altamente estructurados con partes bien diferenciadas
+por elementos específicos para definirlas. Un documento HTML está dividido en dos
+secciones. La cabecera, la cual se utiliza para contener metadatos del documento, tales
+como el título, hojas de estilo, scripts, etc. y el cuerpo, el cual contiene todo el contenido de
+la página y que se visualiza en el navegador.</p>
+        <code>
+          &nbsp< !DOCTYPE html ><br>
+          &nbsp< html lang=”es” ><br>
+          &nbsp&nbsp< head ><br>
+          &nbsp&nbsp&nbsp< meta charset=”utf-8”/ ><br>
+          &nbsp&nbsp&nbsp< title >Desarrollo web estático< /title ><br>
+          &nbsp&nbsp< /head ><br>
+          &nbsp&nbsp< body ><br>
+          &nbsp&nbsp&nbsp< h1 >Bienvenido< /h1 ><br>
+          &nbsp&nbsp&nbsp< p >Esta es mi primera página web.< /p ><br>
+          &nbsp&nbsp< /body ><br>
+          &nbsp< /html >
+        </code>
+        </div>
+        <hr>
+        <div id="item-2-2"><h4>CSS</h4>
+          <h5>¿Qué es CSS?</h5>
+          <p>CSS son las siglas de Cascade Style Sheet. Es un lenguaje para definir el aspecto con el que mostrará una página web diseñada en HTML.</p>
+          <p>La idea es separar el contenido del diseño. De esta forma se puede adaptar una página web para que se vea en distintos dispositivos sin mucho esfuerzo.</p>
+          <p>En resumen, con HTML definiremos que contenido tiene nuestra página WEB y con CSS definiremos cómo queremos que se vea ese contenido (colores, tamaño, alineación...)</p>
+          <p>CSS se puede utilizar relacionado con HTML de 3 formas distintias:</p>
+          <ul>
+            <li><b>CSS inline</b>: Se hace utilizando el atributo style dentro de HTML</li>
+            <li><b>Interno</b>: Se utiliza el elemento <code>< style ></code> dentro de la cabecera <code>< head ></code> del documento HTML</li>
+            <li><b>Externo</b>: Se especifican los estilos en un archivo externo y se relaciona con el archivo HTML incluyendo en este el elemento <code>< link ></code></li>
+          </ul><br>
+          <video controls>
+            <source src="../videos/css_1.mp4" type="video/mp4">
+          </video><br><br><br>
+          <h5>Sintaxis CSS</h5>
+          <p>Un conjunto de reglas CSS consta de un selector y un bloque de declaración.</p>
+          <img src="../img/sintaxis_css.png">
+          <p>En el selector indicamos el elemento HTML  al que se quiere aplicar el estilo.</p>
+
+<p>En el bloque de declaraciones habrá una o varias declaraciones terminadas en ;</p>
+
+<p>Cada declaración incluye un nombre de propiedad CSS y un valor, separados por dos puntos.</p>
+
+<p>El bloque de declaraciones estará enmarcado entre  { }</p><br><br>
+        
+        <h5>Selectores CSS</h5>
+        <p>Los selectores se utilizan para seleccionar los elementos HTML a los que queremos aplicar un determinado estilo.</p>
+        <p>En este apartado veremos los selectores básicos</p>
+        <h6><u>Selector de elementos</u></h6>
+        <p>Seleccionará los elementos de elemento</p>
+        <h6><u>Selector de id</u></h6>
+        <p>Seleccionará un elemento por el nombre asignado mediante el atributo id</p>
+        <h6><u>Selector de clases</u></h6>
+        <p>Selecciona uno a varios elementos por el nombre de la clase a la que pertenece</p>
+        <h6><u>Selector universal</u></h6>
+        <p>Se puede añadir una regla de estilo que afecte a todos los elementos del documento HTML. En el siguiente ejemplo, todos los elementos estarán alineados al centro y serán de color verde.</p>
+        <h6><u>Selector de agrupación</u></h6>
+        <p>Si hay varios elementos HTML a los que queremos asignar una misma propiedad, no necesitamos escribir una regla para cada uno, podemos agruparlos.</p><br>
+        <h5>Colores HTML y CSS</h5>
+        <p>En HTML y CSS podemos especificar un color de diferentes formas. Se admiten 140 nombres estándar de color. También podemos especificarlo en RGB y en valores Hexadecimales (HEX).</p>
+        <p>En la siguiente imagen tienes los nombres de colores admitidos.</p><br>
+        <img src="../img/colores_html.png">
+        <p>Se puede especificar el color de un texto, el color del fondo, y el color del borde de los elementos HTML.</p><br><br>
+
+        <h5>Modelo en cajas</h5>
+        <p>Todos los elementos HTML son considerados por CSS como un conjunto de cajas</p>
+        <img src="../img/cajas.svg"><br>
+        <ul>
+          <li>Content: Será el contenido de la caja. Aquí aparecerá el texto, la imagen...</li>
+          <li>Padding: Área alrededor del contenido. Será transparente.</li>
+          <li>Border: Borde que aparecerá alrededor del Padding</li>
+          <li>Margin: Área que aparecerá alrededor del borde. Será transparente.</li>
+        </ul>
+
+        <h5>Ejemplo completo</h5>
+        <p>En el siguiente archivo pdf tienes un ejemplo de lo que debes puedes hacer con lo aprendido hasta el momento:</p>
+        <p><a href="../documentos/ejemplo.pdf" target="_blank">Descargar ejemplo completo</a></p>
+        <p>También puedes descargar el archivo html y la hoja de estilo y para hacer pruebas.</p>
+        <p><a href="../documentos/ejemplo.zip">Descargar ejemplo para probar</a></p>
+        </div>
+        <hr>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/32358c7687.js" crossorigin="anonymous"></script>
+</body>
+</html>

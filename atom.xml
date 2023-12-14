@@ -1,0 +1,49 @@
+<feed xml:lang="es" xml:base="https://joseluisruigar.github.io/lmar.github.io/">
+<id>https://estherostos.github.io/proyectofhw/</id>
+<title>Lenguaje de Marcas xml</title>
+<updated>2023-12-14T14:28:00+01:00</updated>
+<link rel="alternate" href="https://estherostos.github.io/proyectofhw/atom.xml"/>
+
+<author>
+<name>José Luis Ruiz</name>
+<email>rugajo_aliesma2324@iesmedinaazahara.es</email>
+</author>
+
+<contributor>
+<name>otro Autor</name>
+<email>otro@gmail.com</email>
+<uri>https://www.linkedin.com/in/otro</uri>
+</contributor>
+
+<category term="Viajes ficticios"/>
+<logo>img/medina_favicon.png</logo>
+
+<entry>
+<id>https://joseluisruigar.github.io/lmar.github.io/paginas/lmar.html</id>
+<title>Lenguaje de Marcas</title>
+<update>2023-12-14T14:36:00+01:00</update>
+<author>
+	<name>José Luis Ruiz García</name>
+	<email>rugajo_aliesma2324@iesmedinaazahara.es</email>
+</author>
+<summary>
+Este artículo contiene los dos primeros RA de Lenguaje de Marcas.
+</summary>
+<link rel="alternate" href="https://joseluisruigar.github.io/lmar.github.io/paginas/lmar.html"/>
+</entry>
+</feed>
+
+<entry>
+<id>lmar.html</id>
+<title>Lenguaje de Marcas</title>
+<update>2023-12-14T14:36:00+01:00</update>
+<author>
+	<name>José Luis Ruiz García</name>
+	<email>rugajo_aliesma2324@iesmedinaazahara.es</email>
+</author>
+<summary>
+Este artículo contiene los dos primeros RA de Gestión de Bases de Datos.
+</summary>
+<link rel="alternate" href="https://joseluisruigar.github.io/lmar.github.io/paginas/gbd.html"/>
+</entry>
+</feed>

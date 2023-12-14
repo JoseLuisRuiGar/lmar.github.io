@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+	<title>JL 1ASIR</title>
+	<link>https://joseluisruigar.github.io/lmar.github.io/</link>
+	<description>Página web creada por José Luis Ruiz García que contiene la información básica de las asignaturas dadas en el primer año de Administración de Sistemas Informáticos y Redes.</description>
+
+	<item>
+		<title>Lenguaje de Marcas</title>
+		<link>https://joseluisruigar.github.io/lmar.github.io/paginas/lmar.html</link>
+		<description>Página que contiene la información de los dos primeros RAs dados en Lenguaje de Marcas</description>
+	</item>
+
+	<item>
+		<title>Gestión de Bases de Datos</title>
+		<link>https://joseluisruigar.github.io/lmar.github.io/paginas/gbd.html</link>
+		<description>Página que contiene la información de los dos primeros RAs dados en Lenguaje de Marcas</description>
+	</item>
+</channel>
+</rss>
